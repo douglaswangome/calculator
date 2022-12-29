@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+.calculator {
+  background-color: #616161;
+  border-radius: 6px;
+  width: 30%;
+  padding: 3vh 1vw;
+  font-size: 20px;
+  font-family: "Merienda";
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  color: #F5F5F5;
+}
+
+.calculator .header {
+  font-size: 30px;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  margin-block: 1vh;
+}
+
+.calculator .inputs {
+  margin-bottom: 2vh;
+  padding: 1vh .8vw;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+}
+
+.calculator .inputs .prevInput {
+  border-bottom: 1px solid #EEEEEE;
+  padding-block: .4vh;
+  font-size: 12px;
+  text-align: end;
+  color: #BDBDBD;
+}
+
+.calculator .inputs input {
+  background-color: transparent;
+  color: #F5F5F5;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  text-align: end;
+  margin-block: .4vh;
+  padding-block: 1vh;
+}
+
+.calculator .inputs input:focus {
+  outline: none;
+}
+
+.calculator .normal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5vh 1vw;
+}
+
+.calculator .normal div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100%;
+  cursor: pointer;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.calculator .normal div:hover {
+  box-shadow: 0 -1px 0 0 #EEEEEE;
+  box-shadow: 1px 0 0 0 #EEEEEE;
+  box-shadow: 0 1px 0 0 #EEEEEE;
+  box-shadow: 0 0 0 1px #EEEEEE;
+  box-shadow: 0 0 0 1px #EEEEEE;
+}
+
+@media screen and (max-width: 1024px) {
+  .calculator {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calculator {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .calculator {
+    width: 90%;
+  }
+}
