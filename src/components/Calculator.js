@@ -140,6 +140,7 @@ const Calculator = () => {
           placeholder="0"
           onChange={updateFields}
           type="text"
+          onKeyPress={e => e.preventDefault()}
         />
       </div>
       <div className="normal">
