@@ -120,7 +120,6 @@ const Calculator = () => {
     setBodyWidth(window.innerWidth);
     setSquare();
     window.addEventListener("resize", () => setSquare());
-    console.log('first')
 
     return _ => window.removeEventListener("resize", setSquare());
   }, [bodyWidth])
